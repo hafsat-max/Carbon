@@ -18,32 +18,68 @@ body {
 * {
   /* outline: 1px solid red; */
 }
-.overall-container {
-  width: 100%;
+.overall-container{
   margin: 0 auto;
 }
 
 header {
-  padding: 20px 48px;
+  padding: 10px 20px ;
   box-shadow: 1px 1px 3px -3px #000;
+  position: sticky;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
 }
 
+main{
+  width:87%;
+  margin: auto;
+}
 nav > ul {
   gap: 20px;
 }
 
 ul > li {
   color: #6b778c;
+  padding-left: 30px;
+  padding-right: 12px;
 }
+.img-container{
+  min-height: 38vw;
+  min-width: 40vw;
+background-image: url(./assets/carbon.PNG);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 0;
+}
+
+
 /* custom styles */
+
+/* FLEX */
 .flex {
   display: flex;
+}
+
+.column{
+  flex-direction: column;
 }
 
 .justify-between {
   justify-content: space-between;
 }
 
+.justify-center{
+  justify-content: center;
+}
+.justify-around{
+  justify-content: space-around;
+}
+.items-center{
+  align-items: center;
+}
 .list-none {
   list-style: none;
 }
@@ -51,4 +87,37 @@ ul > li {
 .gap-20 {
   gap: 20px;
 }
+.gap-10{
+  gap: 10px;
+}
 
+/* MARGINS */
+.mt-20{
+  margin-top: 20px;
+}
+
+
+/* COLORS */
+.bg-pink{
+  background-color: #e33c8a;
+}
+.bg-light{
+  background-color: #fdf1f7;
+}
+.text-pink{
+  color: #e33c8a;
+}
+.text-white{
+  color: white;
+}
+
+/* HEIGHT */
+.h-32{
+  height: 32px;
+}
+.mh-32{
+  max-height: 32px;
+}
+.mw-330{
+  max-width: 330px;
+}
